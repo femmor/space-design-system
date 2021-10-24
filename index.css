@@ -1,0 +1,53 @@
+
+/**
+ *
+ * Resets
+ *
+ */
+
+ /* https://piccalil.li/blog/modern-css-reset */
+
+/* Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset Margins */
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, figure, figcaption, blockquote, dl, dd, picture {
+  margin: 0;
+}
+
+/* Reset Padding */
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, figure, figcaption, blockquote, dl, dd, picture {
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* Make images easier to work with */
+img, picture, video {
+  display: block;
+  max-width: 100%;
+}
+
+/* Make forms easier to work with */
+input, select, textarea, button {
+  font: inherit;
+}
+
+/* Remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
