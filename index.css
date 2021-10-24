@@ -88,3 +88,7 @@ input, select, textarea, button {
   border: 0;
 }
 
+.box {
+  background-color: lightblue;
+  padding: 3rem;
+}
